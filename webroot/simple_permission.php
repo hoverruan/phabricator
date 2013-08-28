@@ -1,4 +1,22 @@
 <?php
+/**
+ * <Phabricator>/conf/local/simple-permission.json example:
+ *
+ * <pre>
+ * [
+ *    {
+ *        "id": "X", // repository callsign
+ *        "name": "Repository X",
+ *        "members": ["member1", "member2"]
+ *    },
+ *    {
+ *        "id": "Y",
+ *        "name": "Repository Y",
+ *        "members": ["member2", "member3"]
+ *    }
+ *]
+ * <pre>
+ */
 
 require_once dirname(dirname(__FILE__)) . '/externals/simple-permission/SimplePermission.php';
 
