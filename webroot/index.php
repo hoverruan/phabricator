@@ -1,5 +1,7 @@
 <?php
 
+require 'simple_permission.php';
+
 require_once dirname(dirname(__FILE__)).'/support/PhabricatorStartup.php';
 PhabricatorStartup::didStartup();
 
