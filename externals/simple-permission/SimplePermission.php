@@ -9,3 +9,15 @@ function find_repository_from_uri($uri)
         return null;
     }
 }
+
+function load_permission_config($config_file)
+{
+    $repositories = array();
+
+    $config = json_decode(file_get_contents($config_file), true);
+    foreach ($config as $item) {
+        $repositories[$item["id"]] = $item;
+    }
+
+    return $repositories;
+}
